@@ -18,6 +18,7 @@
 2. 2022/02/05 完善日本地区IIJ的相关信息，新增软银的信息。
 3. 2022/02/06 移除很难被证实的日本ISP信息；更新中国香港ISP的信息；新增韩国地区，添加KT-9929和LG-9929信息。
 4. 2022/02/18 修改错别字，添加KR地区ISP（绕路），完善SK与LG信息。
+5. 2022/03/10 添加MY地区ISP
 
 ## TODO
 
@@ -454,6 +455,68 @@ MyRepublic也是当地一大本土运营商，通常被用来解锁新区流媒�
 可直连骨干网：AS4837
 
 近日，中国联通169在新加坡地区和Cogentco开通了新的Peer，使得很多亚太地区Cogent单栈的宽带/服务器都焕发了新的生命，通过联通的169网络，可以做到广州联通到新加坡Cogentco 46ms的延时成绩。
+
+
+
+
+### 马来西亚 
+
+常见ISP：TMNet (unifi) 、TIMEdotCom (TIME MY)、EBB.MY (Extreme Broadband) 、Allo Technology (City Broadband) 、Maxis Communications Bhd 、Celcom Axiata Berhad 、PCCW(G)、HE、Tata、CMI
+
+常见IX：MYIX (The Malaysia Internet Exchange) 、JBIX (Johor Bahru Internet Exchange (JBIX))
+
+下游：Cloudflare、OVH、MSCHosting (Exabytes)、U Mobile 、DiGi Telecommunications (Telenor)、MYREN (Malaysian Research & Education Network) 
+
+马来西亚所有的ISP几乎都对中国移动友好，有些是在 Equinix SG 转一圈后接入 CMI , 有些是接入 NTT 新加坡 后到 NTT HK 再到 CMI HK
+
+**TMNet (unifi)**
+
+TMNet (unifi) , ASN 为 4788 , 是全马来西亚数一数二的ISP , 几乎垄断马来西亚近70%的固定宽频市场，常用来解锁马区流媒体的用途
+
+可直连骨干网： AS4837 中国联通
+
+可是需要注意，虽然从 TMNet traceroute 可以看到可以直连 AS4837 HK - 大陆，可是延迟高达200ms ，推测回程绕 Tata
+
+163 骨干网也是转发到 Tata , 目前看到是转发到 Tata 伦敦
+
+CN2 通常会被带到韩国 KT 再进入大陆
+
+中国移动先是到 Equnix SG 再到 CMI 再到 AS9808 
+
+和 TIMEdotCom (TIME MY) 的互联很烂，经常出现晚高峰 100ms + 的情况
+
+国际网络质量偶尔[抽风](https://forum.lowyat.net/topic/5149798)
+
+和 OVH 新加坡拥有peering 
+
+**TIMEdotCom (TIME MY)**
+
+TIMEdotCom (TIME MY) , ASN 为 9930 , 是全马来西亚除 TMNet (unifi) 第二大的ISP，提供的家宽配套无论是在速度还是价钱都吊打 TMNet(unifi) , 双向500Mbps带公网IP家宽只需210+人民币，在马来西亚算很便宜了，目前市面上没看见 TIMEdotCom 的VPS，不过可用来解锁马区流媒体
+
+可直连骨干网： N/A
+
+AS4837 都会经过 Singtel 
+
+
+AS9808 会经过:
+1. NTT SG - NTT HK - CMI HK - 9808
+2. HE.NET KL - HE.NET SG - Equinix SG - CMI Guangzhou - 9808
+
+163 骨干网和 TMNet (unifi) 情况类似，会转发到 Tata :
+Tata SG - Tata JP - Tata US - 163 骨干网
+
+CN2 会经过 HGC HK 接入大陆 CN2
+
+其他ISP基本都半斤八两:
+1. Maxis 上 AS4837 同样走 Singtel 
+2. Digi / U Mobile 靠AS4788 作为上游所以线路基本和AS4788一致 
+3. Allo Technology 最大上游为 NTT (说到这里你就明白了吧)
+4. EBB.MY 基本靠 HE.Net 做上游，移动/联通/电信都不讨好，不过可以直接接入 CN2 
+
+总结：
+
+马来西亚ISP**基本都对中国移动友好**，**极少ISP (比如 Maxis / TIMEdotCom) 在连接中国联通时走的是 Singtel 直连**，不过延迟90+ , 有可能**回程绕日本**
+市面上目前也就 TMNet (unifi) VPS , 仍未见到类似 TIMEdotCom / Maxis 的VPS
 
 
 ### 韩国
