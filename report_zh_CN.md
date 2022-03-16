@@ -688,7 +688,7 @@ Telia在美国、欧洲都有和电信163互联，总体来说是很中规中矩
 
 常见ISP：LiquidTelecom
 
-可直连的骨干网：AS4134、AS4809
+可直连的骨干网：AS4134、AS4809、AS58423
 
 LiquidTelecom在肯尼亚设有非洲国际交换中心，后与中国电信签署合作关系，目前中国电信在肯尼亚设有一处PoP，同时接入了163和CN2网络，和LiquidTelecom都有Peer。
 
