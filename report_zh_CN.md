@@ -510,7 +510,7 @@ CN2 会经过 HGC HK 接入大陆 CN2
 其他ISP基本都半斤八两:
 1. Maxis 上 AS4837 同样走 Singtel 
 2. Digi / U Mobile 靠AS4788 作为上游所以线路基本和AS4788一致 
-3. Allo Technology 最大上游为 NTT (说到这里你就明白了吧)
+3. Allo Technology 最大上游为 Cogent , 也有接入 TMNet , 不排除部分线路走 TMNet 过 , IPV6 最大上游为 HE.Net
 4. EBB.MY 基本靠 HE.Net 做上游，移动/联通/电信都不讨好，不过可以直接接入 CN2 
 
 总结：
