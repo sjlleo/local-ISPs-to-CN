@@ -493,10 +493,8 @@ CN2 通常会被带到韩国 KT 再进入大陆
 
 TIMEdotCom (TIME MY) , ASN 为 9930 , 是全马来西亚除 TMNet (unifi) 第二大的ISP，提供的家宽配套无论是在速度还是价钱都吊打 TMNet(unifi) , 双向500Mbps带公网IP家宽只需210+人民币，在马来西亚算很便宜了，目前市面上没看见 TIMEdotCom 的VPS，不过可用来解锁马区流媒体
 
-可直连骨干网： N/A
-
-AS4837 都会经过 Singtel 
-
+可直连骨干网：
+- IPV4 :  N/A
 
 AS9808 会经过:
 1. NTT SG - NTT HK - CMI HK - 9808
@@ -506,6 +504,18 @@ AS9808 会经过:
 Tata SG - Tata JP - Tata US - 163 骨干网
 
 CN2 会经过 HGC HK 接入大陆 CN2
+
+AS4837 都会经过 Singtel 
+
+
+- IPV6 : AS4134 
+
+仍不确定 TIME 跟 中国电信买了多少容量
+
+可是通过[路由](https://i.imgur.com/pEu1JUc.png)可以发现是直接从马来西亚 TIME 骨干网跳入中国电信新加坡 PoP , 后直接到中国大陆电信骨干网
+
+
+
 
 其他ISP基本都半斤八两:
 1. Maxis 上 AS4837 同样走 Singtel 
