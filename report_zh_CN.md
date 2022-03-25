@@ -10,7 +10,7 @@
 
 ## **作者**
 
-此文由[吴明](https://www.zhihu.com/people/wu-ming-90-99-90)、sjlleo共同完成，另外感谢[朱朱](https://www.zhihu.com/people/zhu-xiao-qing-10-34)、[Mushroom Kinoko](https://www.zhihu.com/people/wu-ming-58-54)知友们的指正。
+此文由[samleong123](https://github.com/samleong123)、[吴明](https://www.zhihu.com/people/wu-ming-90-99-90)、sjlleo共同完成，另外感谢[朱朱](https://www.zhihu.com/people/zhu-xiao-qing-10-34)、[Mushroom Kinoko](https://www.zhihu.com/people/wu-ming-58-54)知友们的指正。
 
 ## **更新日志**
 
