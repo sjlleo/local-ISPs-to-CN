@@ -514,6 +514,9 @@ AS4837 都会经过 Singtel
 
 可是通过[路由](https://i.imgur.com/pEu1JUc.png)可以发现是直接从马来西亚 TIME 骨干网跳入中国电信新加坡 PoP , 后直接到中国大陆电信骨干网
 
+AS4837 : 去程经过 NTT SG - NTT 日本 - 中国大陆 
+目测回程绕美 ，延迟可达200ms +
+[路由](https://i.imgur.com/RYSjdzS.png)
 
 
 
