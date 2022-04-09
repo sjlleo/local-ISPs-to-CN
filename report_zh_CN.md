@@ -19,6 +19,7 @@
 3. 2022/02/06 移除很难被证实的日本ISP信息；更新中国香港ISP的信息；新增韩国地区，添加KT-9929和LG-9929信息。
 4. 2022/02/18 修改错别字，添加KR地区ISP（绕路），完善SK与LG信息。
 5. 2022/03/10 添加MY地区ISP
+6. 2022/04/09 修改MY - TMNet 信息
 
 ## TODO
 
@@ -473,15 +474,18 @@ MyRepublic也是当地一大本土运营商，通常被用来解锁新区流媒�
 
 TMNet (unifi) , ASN 为 4788 , 是全马来西亚数一数二的ISP , 几乎垄断马来西亚近70%的固定宽频市场，常用来解锁马区流媒体的用途
 
-可直连骨干网： AS4837 中国联通
+可直连骨干网： AS4134 中国电信
 
-可是需要注意，虽然从 TMNet traceroute 可以看到可以直连 AS4837 HK - 大陆，可是延迟高达200ms ，推测回程绕 Tata
+中国联通会从新加坡接入 HE.Net 后绕到美国HE.Net 再接入中国大陆
+[CU](https://i.imgur.com/2W8Ahu4.png)
 
-163 骨干网也是转发到 Tata , 目前看到是转发到 Tata 伦敦
+中国电信通过TM接入中国电信日本后接入中国大陆 
+[CTTMNet](https://i.imgur.com/YZxcFJu.png)
 
 CN2 通常会被带到韩国 KT 再进入大陆
 
 中国移动先是到 Equnix SG 再到 CMI 再到 AS9808 
+[CMCC](https://i.imgur.com/O8Vvnur.png)
 
 和 TIMEdotCom (TIME MY) 的互联很烂，经常出现晚高峰 100ms + 的情况
 
