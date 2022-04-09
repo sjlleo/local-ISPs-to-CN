@@ -477,12 +477,16 @@ TMNet (unifi) , ASN 为 4788 , 是全马来西亚数一数二的ISP , 几乎垄�
 可直连骨干网： AS4134 中国电信
 
 中国联通会从新加坡接入 HE.Net 后绕到美国HE.Net 再接入中国大陆
+
 [CU](https://i.imgur.com/2W8Ahu4.png)
 
 中国电信通过TM接入中国电信日本后接入中国大陆 
+
 [CTTMNet](https://i.imgur.com/YZxcFJu.png)
 
-CN2 通常会被带到韩国 KT 再进入大陆
+CN2 经由Singtel SG 后跳入广州
+
+[cn2TMNet](https://i.imgur.com/cUmxXdM.png)
 
 中国移动先是到 Equnix SG 再到 CMI 再到 AS9808 
 [CMCC](https://i.imgur.com/O8Vvnur.png)
