@@ -10,7 +10,7 @@
 
 ## **作者**
 
-此文由[samleong123](https://github.com/samleong123)、[吴明](https://www.zhihu.com/people/wu-ming-90-99-90)、sjlleo共同完成，另外感谢[朱朱](https://www.zhihu.com/people/zhu-xiao-qing-10-34)、[Mushroom Kinoko](https://www.zhihu.com/people/wu-ming-58-54)知友们的指正。
+此文由[samleong123](https://github.com/samleong123)、[吴明](https://github.com/bpnes-wuming)、sjlleo共同完成，另外感谢[朱朱](https://www.zhihu.com/people/zhu-xiao-qing-10-34)、[Mushroom Kinoko](https://www.zhihu.com/people/wu-ming-58-54)知友们的指正。
 
 ## **更新日志**
 
@@ -417,17 +417,19 @@ BBTEC（软银）其实是近几年才被我们注意到的一家ISP，在上海
 联通9929和联通169目前都不能直连新加坡NTT，请详见日本NTT。
 
 
-**SingTel**
+**SingTel（新加坡电信）**
 
 可直连骨干网：AS4837、AS58453
 
-我们一直说，移动CMI到亚太是最好的，是有道理的，SingTel和CMI在香港和新加坡都有Peer，所以平时到新加坡走的是负载均衡的策略（即香港CMI转香港SingTel、新加坡CMI转新加坡SingTel流量各占一半）。
+Update: 随着移动CMI Transit在亚太的高性价比的优势被挖掘，我们也可以看到大量走CMI的香港/新加坡VPS出现在市场上。这也是目前最具有性价比的大宽带亚太VPS，但是目前CMI的峰值流量已经达到其容量极限，如果依旧不能大幅度扩容的话，CMI在晚高峰的延时和丢包已经呈现显著增长的趋势。
 
-移动CMI到SingTel质量可能是移动CMI到新加坡地区数一数二的优质线路，如果可以搞到一台走SingTel的新加坡VPS的话对移动用户来说，不妨也是一个极好的选择。
+移动为了减轻自己的跨国骨干网压力，目前已经开始对于第三方ISP收取更高的Transit费用，第三方有些已经采用单向路由的方式来节省成本。对于SingTel来说，大陆->新加坡的这部分流量要远大于新加坡->大陆的流量，而现在拥堵的也主要是新加坡->大陆的这部分流量，所以目前SingTel已经断开了往大陆方向移动在新加坡的直连，改走更加通用的NTT。不过目前移动对自家网络CMI和NTT的质量部署了较为严格的限速策略，导致延时、丢包和速度表现均不佳。
 
-联通的169网络对于亚太的支持绝对可以称为老二，在新加坡地区，联通和SingTel有直接Peer，故整体延时和移动几乎一致，只要回程不绕路，使用SingTel也很棒。
+联通的169，在这里把“稳定”两个字表现的淋漓尽致，网络对于亚太的支持绝对可以称为老二，在新加坡地区，联通和SingTel有直接Peer，故整体延时和移动几乎一致，只要回程不绕路，使用SingTel也很棒，目前联通也是唯一SingTel双向新加坡直连的国内ISP。
 
-但是对于中国电信163来说，这可能是一个灾难，很可惜，我们最痛恨的163网络和SingTel在世界各地都没有Transit/Peer，这就导致前往新加坡SingTel之前，数据先会被发送至美西TataCommunication，很少的直连，更多的爆炸，成为了163网络永远的痛。
+但是对于中国电信163来说，因163网络和SingTel在世界各地都没有Transit/Peer，这就导致前往新加坡SingTel之前，数据先会被发送至美西Tata/Telia，但是目前电信163和美西的互联早就已经满了（其实不只是163，CN2也满了），所以速度上来说非常糟糕，加上严格的动态Qos策略，使得延时和丢包雪上加霜。
+
+需要补充一下的是，新加坡SingTel是全新加坡最大规模的ISP，在非大陆地区的国际互联上面，SingTel还是有着相当大的优势，如果您在新加坡的话，选择SingTel还是最佳选择。
 
 **Telstra Global（新加坡）**
 
