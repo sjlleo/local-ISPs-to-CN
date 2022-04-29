@@ -15,9 +15,9 @@ BetterTrace is now in Insider Channels, It's available for Early Access Invitors
 
 **[Join the group](https://t.me/bettertrace) to gain internal testing opportunities.**
 
-Besttrace 开启内测通道，目前已经对受邀用户开放。
+NextTrace 开启内测通道，目前已经对受邀用户开放。
 
-**如需加入内测，[加入群组](https://t.me/bettertrace)提交申请**。请注意，目前内测的版本为Alpha版本，可能存在大量的潜在Bug，只推荐有经验的用户参加。
+**如需加入内测，[加入群组](https://t.me/nexttrace)提交申请**。请注意，目前内测的版本为Alpha版本，可能存在大量的潜在Bug，只推荐有经验的用户参加。
 
 ## Preview Image
 
