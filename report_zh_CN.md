@@ -147,7 +147,7 @@ AS58453又被称之为CMI，是移动的国际段骨干网，最早只在香港�
 
 ### 中国香港
 
-常见ISP：CMI、CUG、NTT、PCCW、Telia、Telstra、CHT、HKBN、HKT、WTT、HGC、GTT、TaTa、HE、Cogentco、BGP.NET、SingTel
+常见ISP：CMI、CUG、NTT、PCCW、Telia、Telstra、CHT、HKBN、HKT、WTT、HGC、GTT、TaTa、HE、Cogentco、SingTel
 
 常见IX：HKIX、EIEHKG（Equinix Internet Exchange HongKong）
 
@@ -155,9 +155,9 @@ AS58453又被称之为CMI，是移动的国际段骨干网，最早只在香港�
 
 该地区ISP连接质量排名（仅供参考，有些线路走不同的汇聚层会有不同的质量）：
 
-AS4134：CUG > CMI > [BGP.NET](http://bgp.net/)  > Telstra >Others（对于163来说，只有CMI、CUG、CN2才可以不被严格的Qos限速，其他163直连的ISP在高峰几乎都一致性地失速，再往后比较就没有意义了）
+AS4134：CUG > CMI > Telstra >Others（对于163来说，只有CMI、CUG、CN2才可以不被严格的Qos限速，其他163直连的ISP在高峰几乎都一致性地失速，再往后比较就没有意义了）
 
-AS4837：CUG > CMI > PCCW > CHT > [BGP.NET](http://bgp.net/) > HKBN/WTT > HKT > Others
+AS4837：CUG > CMI > PCCW > CHT > HKBN/WTT > HKT > Others
 
 AS58453：CMI > CUG > SingTel > HKIX > NTT > HKBN/WTT > Others
 
@@ -242,16 +242,6 @@ CHT即中华电信，为中国台湾的第一大ISP，拥有2大骨干网（CHW�
 相比于电信163的拉垮表现，联通169的表现就漂亮的多，差不多的延时却有着更低的丢包，更高的峰值速度。但是鉴于该地区很高的主机售价，如果你是一个联通用户，CHW也未必是最佳的选择。
 
 也别对移动CMI抱有太大的期望，在低峰和高峰表现截然不同，高峰常常极度拉垮，上面的Telstra好歹还是有速度，这个是真的一点速度都跑不出来，不推荐。
-
-**BGP.NET**
-
-可直连国内骨干网：AS4134、AS4837、AS4809、AS10099、AS9929、AS58453
-
-BGP.NET是目前我们介绍的所有网络中比较特殊的一个，该网专为国内优化，向国内的运营商购买了大量的Transit，故网络延时普遍很低，但是因为总体体量较小，购买的Transit宽带较小，导致对于DDOS攻击会造成极大的网络波动。
-
-另外因为售价相比问电信、联通、移动直接买都要便宜，常常被很多低价IDC所器重（面向个人消费者，价格平民），视作国内优化的万金油，但是因商家为了利润超售宽带严重，故给人该网质量很糟糕的第一印象。我在此不推荐购买便宜的BGP.NET线路的机器建站。
-
-目前BGP.NET在香港地区走CN2的居多，尽管价格便宜，依旧很少有大宽带直连的廉价VPS。
 
 **HKBN/WTT**
 
