@@ -11,7 +11,7 @@ English Version is translating...
 
 # Interesting Things
 
-BetterTrace is now in Insider Channels, It's available for Early Access Invitors.
+NextTrace is now in Insider Channels, It's available for Early Access Invitors.
 
 **[Join the group](https://t.me/bettertrace) to gain internal testing opportunities.**
 
@@ -21,4 +21,10 @@ NextTrace 开启内测通道，目前已经对受邀用户开放。
 
 ## Preview Image
 
-![Preview Image](https://user-images.githubusercontent.com/13616352/164956694-8457a564-28fc-4bd1-8ca7-98e1675397d3.png)
+### Traceroute with TCP SYN
+
+![Image 1](https://user-images.githubusercontent.com/13616352/168771657-4fba9fa4-7617-499c-be97-aa56799c616d.png)
+
+### Route Path
+
+![Image 2](https://user-images.githubusercontent.com/13616352/168775293-f6275bd3-3199-41af-b573-9f9b9e4336eb.png)
