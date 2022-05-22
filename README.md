@@ -11,20 +11,10 @@ English Version is translating...
 
 # Interesting Things
 
-NextTrace is now in Insider Channels, It's available for Early Access Invitors.
+NextTrace is now Open-Source. 
+
+Project Here: https://github.com/xgadget-lab/nexttrace
 
 **[Join the group](https://t.me/bettertrace) to gain internal testing opportunities.**
 
-NextTrace 开启内测通道，目前已经对受邀用户开放。
 
-**如需加入内测，[加入群组](https://t.me/nexttrace)提交申请**。请注意，目前内测的版本为Alpha版本，可能存在大量的潜在Bug，只推荐有经验的用户参加。
-
-## Preview Image
-
-### Traceroute with TCP SYN
-
-![Image 1](https://user-images.githubusercontent.com/13616352/168771657-4fba9fa4-7617-499c-be97-aa56799c616d.png)
-
-### Route Path
-
-![Image 2](https://user-images.githubusercontent.com/13616352/168775293-f6275bd3-3199-41af-b573-9f9b9e4336eb.png)
