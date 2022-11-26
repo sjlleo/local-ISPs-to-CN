@@ -9,12 +9,3 @@ Please note: This report is still being refined (EA). Please submit an issue if 
 
 English Version is translating...
 
-# Interesting Things
-
-NextTrace is now Open-Source. 
-
-Project Here: https://github.com/xgadget-lab/nexttrace
-
-**[Join the group](https://t.me/bettertrace) to gain internal testing opportunities.**
-
-
